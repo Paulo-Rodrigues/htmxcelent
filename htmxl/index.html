@@ -25,5 +25,18 @@
     <p>GET</p>
   </div>
 
+  <div hx-post="http://localhost:8000/message" hx-trigger="mouseenter">
+    <p>Mouse enter</p>
+  </div>
+
+  <div hx-post="http://localhost:8000/message" hx-trigger="mouseleave">
+    <p>Mouse leave</p>
+  </div>
+
+  <input
+    type="text"
+    hx-post="http://localhost:8000/message"
+    hx-trigger="change"
+  />
 </body>
 </html>
