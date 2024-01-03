@@ -11,8 +11,19 @@
     Message
   </button>
 
-  <div id="res">
+  <div id="res"></div>
 
+  <button type="button" hx-get="http://localhost:8000/">
+    GET
+  </button>
+
+  <button type="button" hx-post="http://localhost:8000/message">
+    POST
+  </button>
+
+  <div hx-get="http://localhost:8000/">
+    <p>GET</p>
   </div>
+
 </body>
 </html>
