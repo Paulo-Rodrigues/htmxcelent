@@ -38,5 +38,28 @@
     hx-post="http://localhost:8000/message"
     hx-trigger="change"
   />
+
+  <div
+    hx-post="http://localhost:8000/message"
+    hx-trigger="mouseenter once"
+  >
+    Make a POST request
+  </div>
+
+  <div
+    hx-post="http://localhost:8000/message"
+    hx-trigger="mouseenter delay:3s"
+  >
+    Make a delayed POST request
+  </div>
+
+  <div
+    hx-post="http://localhost:8000/message"
+    hx-trigger="click from:#btn"
+  >
+    Make a post triggered by btn
+  </div>
+
+  <button id="btn">Click me</button>
 </body>
 </html>
